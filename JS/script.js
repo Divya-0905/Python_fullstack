@@ -1,3 +1,5 @@
+const { useInsertionEffect } = require("react");
+
 alert("Welcome to NRIIT Learning Management System")
 let heading = document.getElementById("welcome");
 heading.innerHTML = "Welcome Future Software Engineers"
@@ -11,3 +13,15 @@ function showmessage() {
 function changeHeading(){
     document.getElementById("welcome").innerHTML = "Welcome Python Fullstack Developers"
 }
+let button=document.getElementById("btnGreeting");
+button.addEventListener("click", function(){
+    alert("welcome to javascript Event Handling");
+})
+let registerForm= document.getElementById("registerForm");
+registerForm.addEventListener("submit",function(event){
+    event.preventDefault();
+    let name=document.getElementById("name").value;
+    let email=document.getElementById("email").value;
+    let password=document.getElementById("password").value;
+
+})
