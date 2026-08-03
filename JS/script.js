@@ -1,4 +1,4 @@
-const { useInsertionEffect } = require("react");
+const { useInsertionEffect, useMemo } = require("react");
 
 alert("Welcome to NRIIT Learning Management System")
 let heading = document.getElementById("welcome");
@@ -25,3 +25,21 @@ registerForm.addEventListener("submit",function(event){
     let password=document.getElementById("password").value;
 
 })
+alert("Registration sucessful")
+console.log("Name",name)
+console.log("Email",email)
+console.log("Password",password)
+function squareNumber(num){
+    return num * num;
+}
+x=squareNumber(5);
+console.log("Square of 5 is:",x)
+
+function checkOddEven(num){
+    if(num%2==0){
+        return "Even";
+    }
+    else{
+        return "odd";
+    }
+}
